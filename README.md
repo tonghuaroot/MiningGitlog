@@ -53,7 +53,7 @@ python3  MiningGitlog.py -username omg2hei -t Github_token
 ```
 python3  MiningGitlog.py -orgname twitter -t Github_token
 ```
-!()[./README_demo1.png]
+![](./README_demo1.png)
 
 收集本地git仓库commit记录中包含的邮箱信息：
 ```
