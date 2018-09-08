@@ -3,6 +3,8 @@ A script to mine email addresses in the Github repository.
 
 用于在Github仓库log记录中采集mail地址的脚本。
 
+![](./README_demo.png)
+
 ## 安装方法及依赖环境
 ```
 git clone https://github.com/omg2hei/MiningGitlog.git
