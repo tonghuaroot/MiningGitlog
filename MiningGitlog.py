@@ -28,9 +28,13 @@ def get_user_repos(username, page=1):
     if not json:
         return None
     for item in json:
-        if item['private'] == False and item['fork'] == False:
-            #print('searching ' + item["html_url"])
-            print_result(item["html_url"])
+        try:
+            if item['private'] == False and item['fork'] == False:
+                # print(item['html_url'])
+                # print('searching ' + item["html_url"])
+                print_result(item["html_url"])
+        except exc.GitCommandError as empty_repository:
+            pass
     get_user_repos(username, page + 1)
 
 def print_log_mail(repo_dir):
